@@ -13,9 +13,6 @@ data <- subset(data_full, Date >= "2007-02-01" & Date <= "2007-02-02")
 datetime <- paste(as.Date(data$Date), data$Time)
 data$Datetime <- as.POSIXct(datetime)
 
-## Format Data
-data$Global_active_power <- as.numeric(data$Global_active_power)
-
 ## Plot 2
 plot(data$Global_active_power~data$Datetime, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
