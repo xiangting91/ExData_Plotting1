@@ -19,7 +19,7 @@ data$Datetime <- as.POSIXct(datetime)
 par(mfrow=c(2,2))
 
         ## Plot 1
-        plot(data$Global_active_power~data$Datetime, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+        plot(data$Global_active_power~data$Datetime, type="l", xlab="", ylab="Global Active Power")
 
         ##Plot 2
         plot(data$Voltage~data$Datetime, type="l", xlab="datetime", ylab="Voltage")
